@@ -1,8 +1,17 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "Montserrat", "Arial", sans-serif;
 
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Montserrat", "Arial", sans-serif;
+
+  font-display: swap;
+  src: url("../fonts/Montserrat-light.woff2") format("woff2"), url("../fonts/Montserrat-light.woff") format("woff");
 }

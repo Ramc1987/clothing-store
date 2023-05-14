@@ -1,0 +1,45 @@
+.header__promo-content {
+  padding-top: 252px;
+  margin: 0 auto;
+}
+
+.promo-content {
+  max-width: 1126px;
+  width: 64.4%;
+  text-align: center;
+}
+
+.promo-content__subtitle,
+.promo-content__title {
+  text-transform: uppercase;
+  text-align: center;
+
+  margin: 0;
+}
+
+.promo-content__subtitle {
+  @include font(24px, 29px, 300, $second-color);
+
+  margin-bottom: 15px;
+}
+
+.promo-content__title {
+  @include font(5vw, 117px, 300, $second-color);
+
+  margin-bottom: 58px;
+}
+
+.promo-content__preview {
+  @include font(14px, 17px, 300, $second-color);
+  text-transform: uppercase;
+
+  width: 102px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-content__preview-icon {
+  display: block;
+}

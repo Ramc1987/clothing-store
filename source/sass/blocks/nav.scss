@@ -1,0 +1,48 @@
+.nav {
+  max-width: 1190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//primary-nav
+
+.nav__primary-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 650px;
+  width: 54.63%;
+}
+
+.nav__primary-link {
+  text-transform: uppercase;
+  outline: none;
+
+  @include hover {
+    opacity: 0.6;
+  }
+
+  @include focus {
+    outline: 1px solid rgb(53, 53, 53);
+    outline-offset: 3px;
+  }
+}
+
+//user-nav
+
+.nav__user-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 235px;
+  width: 19.75%;
+}
+
+.nav__user-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav__user-link {
+  display: block;
+}
