@@ -1,11 +1,12 @@
 .header__promo-content {
   padding-top: 252px;
   margin: 0 auto;
+  margin-bottom: 186px;
 }
 
 .promo-content {
   max-width: 1126px;
-  width: 64.4%;
+  width: 100%;
   text-align: center;
 }
 
@@ -24,7 +25,7 @@
 }
 
 .promo-content__title {
-  @include font(5vw, 117px, 300, $second-color);
+  @include font(96px, 117px, 300, $second-color);
 
   margin-bottom: 58px;
 }

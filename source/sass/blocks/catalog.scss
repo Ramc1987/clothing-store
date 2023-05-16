@@ -1,0 +1,18 @@
+.catalog .catalog__container {
+  padding: 0;
+}
+
+.catalog-title {
+  @include font(24px, 132%, 400, $first-color);
+  text-transform: uppercase;
+  text-align: center;
+
+  width: 272px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.catalog__swiper-wrapper {
+  max-width: 1696px;
+  margin-left: auto;
+}

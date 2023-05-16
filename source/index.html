@@ -66,15 +66,19 @@
             <h2 class="promo-content__title">платья с принтами</h2>
             <a class="promo-content__preview">
               смотреть
-              <svg
-                class="promo-content__preview-icon"
-                role="img"
-                width="9"
-                height="6"
-              >
+              <svg class="promo-content__preview-icon" role="img" width="9" height="6">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
               </svg>
             </a>
+          </div>
+          <div class="header__control-pages">
+            <div class="header__control-description">
+              <p class="header__control-text">предыдущий</p>
+              <p class="header__control-text">следующий</p>
+            </div>
+            <div class="header__control-indicator">
+              <span class="header__indicator"></span>
+            </div>
           </div>
         </div>
       </header>
@@ -86,81 +90,259 @@
               <a class="secondary-nav__link" href="#">лето</a>
               <picture>
                 <source type="image/webp" srcset="img/gallery/image-1.webp" />
-                <img
-                  src="img/gallery/image-1.png"
-                  width="321"
-                  height="428"
-                  loading="lazy"
-                  alt="летняя одежда"
-                />
+                <img class="secondary-nav__item-image" src="img/gallery/image-1.png" width="321" height="428" loading="lazy" alt="летняя одежда" />
               </picture>
             </li>
             <li class="secondary-nav__item">
               <a class="secondary-nav__link" href="#">путешествие</a>
               <picture>
                 <source type="image/webp" srcset="img/gallery/image-2.webp" />
-                <img
-                  src="img/gallery/image-2.png"
-                  width="321"
-                  height="428"
-                  loading="lazy"
-                  alt="одежда для путешествия"
-                />
+                <img class="secondary-nav__item-image" src="img/gallery/image-2.png" width="321" height="428" loading="lazy" alt="одежда для путешествия" />
               </picture>
             </li>
             <li class="secondary-nav__item">
               <a class="secondary-nav__link" href="#">коллекции</a>
               <picture>
                 <source type="image/webp" srcset="img/gallery/image-3.webp" />
-                <img
-                  src="img/gallery/image-3.png"
-                  width="321"
-                  height="428"
-                  loading="lazy"
-                  alt="коллекции одежды"
-                />
+                <img class="secondary-nav__item-image" src="img/gallery/image-3.png" width="321" height="428" loading="lazy" alt="коллекции одежды" />
               </picture>
             </li>
             <li class="secondary-nav__item">
               <a class="secondary-nav__link" href="#">новинки</a>
               <picture>
                 <source type="image/webp" srcset="img/gallery/image-4.webp" />
-                <img
-                  src="img/gallery/image-4.png"
-                  width="321"
-                  height="428"
-                  loading="lazy"
-                  alt="новинки"
-                />
+                <img class="secondary-nav__item-image" src="img/gallery/image-4.png" width="321" height="428" loading="lazy" alt="новинки" />
               </picture>
             </li>
             <li class="secondary-nav__item">
               <a class="secondary-nav__link" href="#">скидки</a>
               <picture>
                 <source type="image/webp" srcset="img/gallery/image-5.webp" />
-                <img
-                  src="img/gallery/image-5.png"
-                  width="321"
-                  height="428"
-                  loading="lazy"
-                  alt="скидки"
-                />
+                <img class="secondary-nav__item-image" src="img/gallery/image-5.png" width="321" height="428" loading="lazy" alt="скидки" />
               </picture>
             </li>
             <li class="secondary-nav__item">
               <a class="secondary-nav__link" href="#">лукбук</a>
               <picture>
                 <source type="image/webp" srcset="img/gallery/image-6.webp" />
-                <img
-                  src="img/gallery/image-6.png"
-                  width="321"
-                  height="428"
-                  loading="lazy"
-                  alt="книги про одежду"
-                />
+                <img class="secondary-nav__item-image" src="img/gallery/image-6.png" width="321" height="428" loading="lazy" alt="книги про одежду" />
               </picture>
             </li>
           </ul>
+        </section>
+        <section class="catalog">
+          <div class="catalog__container container">
+            <h2 class="catalog-title">откроЙте для себя новинки сезона</h2>
+            <div class="catalog__swiper-wrapper">
+              <div class="swiper product" id="catalogSwiper">
+                <ul class="product__produts-list swiper-wrapper reset-list">
+                  <li class="product__item swiper-slide">
+                    <a class="product__link" href="#">
+                      <svg class="product__favourites-icon" role="img" width="21" height="19">
+                        <use xlink:href="img/sprite.svg#favourites"></use>
+                      </svg>
+                      <picture>
+                        <source />
+                        <img class="product__image" src="img/catalog/image-1.png" width="415" height="585" alt="Платье-рубашка виск атлас" />
+                      </picture>
+                      <div class="product__footer">
+                        <form class="product__form" method="post">
+                          <fieldset class="product__sizes-wrapper">
+                            <label class="product__custom-radio">
+                              <input class="product__radio product__radio--disabled" type="radio" name="size" value="xxs" disabled />
+                              <span class="product__title-radio">xxs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xs" />
+                              <span class="product__title-radio">xs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="s" />
+                              <span class="product__title-radio">s</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="m" />
+                              <span class="product__title-radio">m</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="l" />
+                              <span class="product__title-radio">l</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio product__radio--disabled" type="radio" name="size" value="xl" disabled />
+                              <span class="product__box-radio"></span>
+                              <span class="product__title-radio">xl</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xxl" />
+                              <span class="product__title-radio">xxl</span>
+                            </label>
+                          </fieldset>
+                          <button type="submit">weferbebs</button>
+                        </form>
+                        <h3 class="product__title">Платье-рубашка виск атлас</h3>
+                        <p class="product__current-price">12 700р.</p>
+                        <span class="product__marker">новинка</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product__item swiper-slide">
+                    <a class="product__link" href="#">
+                      <svg class="product__favourites-icon" role="img" width="21" height="19">
+                        <use xlink:href="img/sprite.svg#favourites"></use>
+                      </svg>
+                      <picture>
+                        <source />
+                        <img class="product__image" src="img/catalog/image-2.png" width="415" height="585" alt="Юбка миди 2 полоска" />
+                      </picture>
+                      <div class="product__footer">
+                        <form class="product__form" method="post">
+                          <fieldset class="product__sizes-wrapper">
+                            <label class="product__custom-radio">
+                              <input class="product__radio product__radio--disabled" type="radio" name="size" value="xxs" disabled />
+                              <span class="product__title-radio">xxs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xs" />
+                              <span class="product__title-radio">xs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="s" />
+                              <span class="product__title-radio">s</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="m" />
+                              <span class="product__title-radio">m</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="l" />
+                              <span class="product__title-radio">l</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio product__radio--disabled" type="radio" name="size" value="xl" disabled />
+                              <span class="product__box-radio"></span>
+                              <span class="product__title-radio">xl</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xxl" />
+                              <span class="product__title-radio">xxl</span>
+                            </label>
+                          </fieldset>
+                          <button type="submit">weferbebs</button>
+                        </form>
+                        <h3 class="product__title">Юбка миди 2 полоска</h3>
+                        <p class="product__current-price">4 400р.</p>
+                        <span class="product__marker">новинка</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product__item swiper-slide">
+                    <a class="product__link" href="#">
+                      <svg class="product__favourites-icon" role="img" width="21" height="19">
+                        <use xlink:href="img/sprite.svg#favourites"></use>
+                      </svg>
+                      <picture>
+                        <source />
+                        <img class="product__image" src="img/catalog/image-3.png" width="415" height="585" alt="Платье-рубашка виск атлас" />
+                      </picture>
+                      <div class="product__footer">
+                        <form class="product__form" method="post">
+                          <fieldset class="product__sizes-wrapper">
+                            <label class="product__custom-radio">
+                              <input class="product__radio product__radio--disabled" type="radio" name="size" value="xxs" disabled />
+                              <span class="product__title-radio">xxs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xs" />
+                              <span class="product__title-radio">xs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="s" />
+                              <span class="product__title-radio">s</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="m" />
+                              <span class="product__title-radio">m</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="l" />
+                              <span class="product__title-radio">l</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio product__radio--disabled" type="radio" name="size" value="xl" disabled />
+                              <span class="product__box-radio"></span>
+                              <span class="product__title-radio">xl</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xxl" />
+                              <span class="product__title-radio">xxl</span>
+                            </label>
+                          </fieldset>
+                          <button type="submit">weferbebs</button>
+                        </form>
+                        <h3 class="product__title">Платье-рубашка виск атлас</h3>
+                        <p class="product__current-price">12 700р.</p>
+                        <span class="product__marker">новинка</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product__item swiper-slide">
+                    <a class="product__link" href="#">
+                      <svg class="product__favourites-icon" role="img" width="21" height="19">
+                        <use xlink:href="img/sprite.svg#favourites"></use>
+                      </svg>
+                      <picture>
+                        <source />
+                        <img class="product__image" src="img/catalog/image-4.png" width="415" height="585" alt="Платье-рубашка с карманами миди" />
+                      </picture>
+                      <div class="product__footer">
+                        <form class="product__form" method="post">
+                          <fieldset class="product__sizes-wrapper">
+                            <label class="product__custom-radio">
+                              <input class="product__radio product__radio--disabled" type="radio" name="size" value="xxs" disabled />
+                              <span class="product__title-radio">xxs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xs" />
+                              <span class="product__title-radio">xs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="s" />
+                              <span class="product__title-radio">s</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="m" />
+                              <span class="product__title-radio">m</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="l" />
+                              <span class="product__title-radio">l</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio product__radio--disabled" type="radio" name="size" value="xl" disabled />
+                              <span class="product__box-radio"></span>
+                              <span class="product__title-radio">xl</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xxl" />
+                              <span class="product__title-radio">xxl</span>
+                            </label>
+                          </fieldset>
+                          <button type="submit">weferbebs</button>
+                        </form>
+                        <h3 class="product__title">Платье-рубашка с карманами миди</h3>
+                        <span class="product__nosale-price">12 900р.</span>
+                        <p class="product__current-price">8 900р.</p>
+                        <span class="product__marker">новинка</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <button class="catalog__button catalog__button--prev" aria-label="назад" type="button"></button>
+              <button class="catalog__button catalog__button--next" aria-label="вперед" type="button"></button>
+            </div>
+          </div>
         </section>
       </main>
       <footer>

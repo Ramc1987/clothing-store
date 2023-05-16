@@ -1,0 +1,85 @@
+.product__link {
+  position: relative;
+}
+
+.product__link:hover .product__form {
+  z-index: 1;
+}
+
+.product__favourites-icon {
+  position: absolute;
+  right: 27px;
+  top: 24px;
+  cursor: pointer;
+}
+
+.product__image {
+  background-color: #f6f6f6;
+}
+
+.product__form {
+  width: 100%;
+  min-height: 80px;
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $second-color;
+  // z-index: -1;
+}
+
+.product__sizes-wrapper {
+  padding: 0;
+  border: none;
+
+  width: 271px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.product__radio {
+  appearance: none;
+
+  &--disabled {
+    color: #c4c4c4;
+  }
+}
+
+.product__title-radio {
+  @include font(12px, 15px, 300, $first-color);
+
+  cursor: pointer;
+}
+
+.product__footer {
+  padding-top: 13px;
+  position: relative;
+}
+
+.product__title {
+  @include font(14px, 17px, 300, $first-color);
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.product__current-price {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.product__nosale-price {
+  @include font(14px, 17px, 300, #aac4e1);
+  text-decoration-line: line-through;
+}
+
+.product__marker {
+  @include font(11px, 14px, 400, $first-color);
+  text-transform: uppercase;
+
+  background-color: #80bdee;
+  padding: 6px 13px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
