@@ -67,3 +67,19 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -2px;
+  right: -7px;
+  width: 16px;
+  height: 16px;
+  background-color: #e1cda6;
+  border-radius: 100%;
+  text-align: center;
+  @include font(10px, 12px, 400);
+  font-family: "Montserrat", "Arial", sans-serif;
+}

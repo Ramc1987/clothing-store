@@ -1,6 +1,8 @@
 import { iosVhFix } from './utils/ios-vh-fix';
 import { toogleIndicator } from './modules/toggle-indicator';
 import { initSwiperArticles } from './modules/catalog-swiper';
+import { counterProduct } from './modules/counter-basket';
+import { counterFavorites } from './modules/favourites-counter';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -14,6 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
 
   toogleIndicator();
+  counterProduct();
+  counterFavorites();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

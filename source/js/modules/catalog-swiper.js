@@ -7,11 +7,6 @@ const initSwiperArticles = (swiper) => {
         prevEl: '.catalog__button--next',
       },
 
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
-
       mousewheel: true,
       keyboard: true,
 
@@ -32,12 +27,12 @@ const initSwiperArticles = (swiper) => {
           initialSlide: 2,
         },
 
-        // 768: {
-        //   slidesPerView: 2,
-        //   slidesPerGroup: 2,
-        //   spaceBetween: 30,
-        //   initialSlide: 2,
-        // },
+        768: {
+          slidesPerView: 3,
+          slidesPerGroup: 2,
+          spaceBetween: 30,
+          initialSlide: 2,
+        },
         1300: {
           slidesPerView: 3,
           slidesPerGroup: 1,

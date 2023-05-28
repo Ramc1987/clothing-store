@@ -44,5 +44,22 @@
 }
 
 .nav__user-link {
+  position: relative;
   display: block;
+}
+
+.nav__basket-counter {
+  display: none;
+
+  &--product {
+    display: flex;
+  }
+}
+
+.nav__favourites-counter {
+  display: none;
+
+  &--product {
+    display: flex;
+  }
 }

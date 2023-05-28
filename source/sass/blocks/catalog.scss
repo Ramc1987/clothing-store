@@ -3,7 +3,7 @@
 }
 
 .catalog-title {
-  @include font(24px, 132%, 400, $first-color);
+  @include font(24px, 132%, 300, $first-color);
   text-transform: uppercase;
   text-align: center;
 
