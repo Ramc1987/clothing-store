@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="магазин одежды" />
+    <link rel="preload" href="fonts/montserrat-light.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <title>clothing-store</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__overlay">
+          <div class="header__container container">
+            <nav class="header__nav nav" aria-label="Основная">
+              <div class="header__mobil-menu mobile-menu">
+                <ul class="nav__primary-list reset-list">
+                  <li class="nav__primary-item">
+                    <a class="nav__primary-link" href="#">женщинам</a>
+                  </li>
+                  <li class="nav__primary-item">
+                    <a class="nav__primary-link" href="#">мужчинам</a>
+                  </li>
+                  <li class="nav__primary-item">
+                    <a class="nav__primary-link" href="#">аксессуары</a>
+                  </li>
+                  <li class="nav__primary-item">
+                    <a class="nav__primary-link" href="#">новинки</a>
+                  </li>
+                  <li class="nav__primary-item">
+                    <a class="nav__primary-link" href="#">коллекции</a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="nav__user-list reset-list">
+                <li class="nav__user-item">
+                  <a class="nav__user-link" href="#">
+                    <svg class="nav__user-icon" role="img" width="21" height="20">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__user-item">
+                  <a class="nav__user-link" href="#">
+                    <svg class="nav__user-icon" role="img" width="21" height="20">
+                      <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__user-item">
+                  <a class="nav__user-link" href="#">
+                    <svg class="nav__user-icon" role="img" width="21" height="19">
+                      <use xlink:href="img/sprite.svg#icon-favourites"></use>
+                    </svg>
+                    <span class="nav__favourites-counter counter"></span>
+                  </a>
+                </li>
+                <li class="nav__user-item">
+                  <a class="nav__user-link" href="#">
+                    <svg class="nav__user-icon" role="img" width="22" height="22">
+                      <use xlink:href="img/sprite.svg#icon-basket"></use>
+                    </svg>
+                    <span class="nav__basket-counter counter"></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__menu-toggle menu-toggle" type="button">
+              <span class="menu-toggle__line"></span>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="header__promo-content promo-content">
+              <p class="promo-content__subtitle">Новая коллекция 2022</p>
+              <h2 class="promo-content__title">платья с принтами</h2>
+              <a class="promo-content__preview" href="#">
+                смотреть
+                <svg class="promo-content__preview-icon" role="img" width="9" height="6">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header__control-pages">
+              <div class="header__control-description">
+                <button class="header__control-button" type="button">предыдущий</button>
+                <button class="header__control-button" type="button">следующий</button>
+              </div>
+              <div class="header__control-indicator">
+                <span class="header__indicator"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="secondary-nav">
+          <h2 class="visually-hidden">Навигация по категориям</h2>
+          <ul class="secondary-nav__list reset-list">
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">лето</a>
+              <picture>
+                <source type="image/webp" srcset="img/gallery/image-1.webp" />
+                <img class="secondary-nav__item-image" src="img/gallery/image-1.png" width="321" height="428" loading="lazy" alt="летняя одежда" />
+              </picture>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">путешествие</a>
+              <picture>
+                <source type="image/webp" srcset="img/gallery/image-2.webp" />
+                <img class="secondary-nav__item-image" src="img/gallery/image-2.png" width="321" height="428" loading="lazy" alt="одежда для путешествия" />
+              </picture>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">коллекции</a>
+              <picture>
+                <source type="image/webp" srcset="img/gallery/image-3.webp" />
+                <img class="secondary-nav__item-image" src="img/gallery/image-3.png" width="321" height="428" loading="lazy" alt="коллекции одежды" />
+              </picture>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">новинки</a>
+              <picture>
+                <source type="image/webp" srcset="img/gallery/image-4.webp" />
+                <img class="secondary-nav__item-image" src="img/gallery/image-4.png" width="321" height="428" loading="lazy" alt="новинки" />
+              </picture>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">скидки</a>
+              <picture>
+                <source type="image/webp" srcset="img/gallery/image-5.webp" />
+                <img class="secondary-nav__item-image" src="img/gallery/image-5.png" width="321" height="428" loading="lazy" alt="скидки" />
+              </picture>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">лукбук</a>
+              <picture>
+                <source type="image/webp" srcset="img/gallery/image-6.webp" />
+                <img class="secondary-nav__item-image" src="img/gallery/image-6.png" width="321" height="428" loading="lazy" alt="книги про одежду" />
+              </picture>
+            </li>
+          </ul>
+        </section>
+        <section class="catalog">
+          <div class="catalog__container container">
+            <h2 class="catalog-title">откроЙте для себя новинки сезона</h2>
+            <a class="catalog__swiper-foul" href="#"
+              >Перейти в каталог
+              <svg class="catalog__foul-icon" role="img" width="9" height="9">
+                <use xlink:href="img/sprite.svg#arrow-next"></use>
+              </svg>
+            </a>
+            <div class="catalog__swiper-wrapper">
+              <div class="swiper product" id="catalogSwiper">
+                <div class="swiper__control-button">
+                  <button class="catalog__button catalog__button--prev" aria-label="назад" type="button">
+                    <svg class="nav__user-icon" role="img" width="21" height="20">
+                      <use xlink:href="img/sprite.svg#arrow-prev"></use>
+                    </svg>
+                  </button>
+                  <button class="catalog__button catalog__button--next" aria-label="вперед" type="button">
+                    <svg class="nav__user-icon" role="img" width="21" height="20">
+                      <use xlink:href="img/sprite.svg#arrow-next"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="product__produts-list swiper-wrapper reset-list">
+                  <li class="product__item swiper-slide">
+                    <a class="product__link" href="#">
+                      <button
+                        class="product__added-favorites"
+                        type="button
+                      "
+                      >
+                        <svg class="product__favourites-icon" role="img" width="24" height="19">
+                          <use xlink:href="img/sprite.svg#favourites"></use>
+                        </svg>
+                      </button>
+
+                      <picture>
+                        <source />
+                        <img class="product__image" src="img/catalog/image-1.png" width="415" height="585" alt="Платье-рубашка виск атлас" />
+                      </picture>
+                      <div class="product__footer">
+                        <form class="product__form">
+                          <fieldset class="product__sizes-wrapper">
+                            <label class="product__custom-radio">
+                              <input class="product__radio product__radio--disabled" type="radio" name="size" value="xxs" disabled />
+                              <span class="product__title-radio size-disabled">xxs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xs" />
+                              <span class="product__title-radio">xs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="s" />
+                              <span class="product__title-radio">s</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="m" />
+                              <span class="product__title-radio">m</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="l" />
+                              <span class="product__title-radio">l</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio product__radio--disabled" type="radio" name="size" value="xl" disabled />
+                              <span class="product__box-radio"></span>
+                              <span class="product__title-radio size-disabled">xl</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xxl" />
+                              <span class="product__title-radio">xxl</span>
+                            </label>
+                          </fieldset>
+                          <button class="product__button-added" type="button">
+                            <span class="product__button-text" aria-label="добавить в корзину">в корзину</span>
+                            <svg class="promo-content__preview-icon" role="img" width="22" height="22">
+                              <use xlink:href="img/sprite.svg#icon-basket"></use>
+                            </svg>
+                          </button>
+                        </form>
+                        <h3 class="product__title">Платье-рубашка виск атлас</h3>
+                        <div class="product__price-wrapper">
+                          <p class="product__current-price">12 700р.</p>
+                        </div>
+                        <span class="product__marker">новинка</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product__item swiper-slide">
+                    <a class="product__link" href="#">
+                      <button
+                        class="product__added-favorites"
+                        type="button
+                      "
+                      >
+                        <svg class="product__favourites-icon" role="img" width="24" height="19">
+                          <use xlink:href="img/sprite.svg#favourites"></use>
+                        </svg>
+                      </button>
+                      <picture>
+                        <source />
+                        <img class="product__image" src="img/catalog/image-2.png" width="415" height="585" alt="Юбка миди 2 полоска" />
+                      </picture>
+                      <div class="product__footer">
+                        <form class="product__form">
+                          <fieldset class="product__sizes-wrapper">
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xxs" disabled />
+                              <span class="product__title-radio size-disabled">xxs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xs" />
+                              <span class="product__title-radio">xs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="s" />
+                              <span class="product__title-radio">s</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="m" />
+                              <span class="product__title-radio">m</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="l" />
+                              <span class="product__title-radio">l</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio size-disabled" type="radio" name="size" value="xl" disabled />
+                              <span class="product__box-radio"></span>
+                              <span class="product__title-radio size-disabled">xl</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xxl" />
+                              <span class="product__title-radio">xxl</span>
+                            </label>
+                          </fieldset>
+                          <button class="product__button-added" type="button">
+                            <span class="product__button-text" aria-label="добавить в корзину">в корзину</span>
+                            <svg class="promo-content__preview-icon" role="img" width="22" height="22">
+                              <use xlink:href="img/sprite.svg#icon-basket"></use>
+                            </svg>
+                          </button>
+                        </form>
+                        <h3 class="product__title">Юбка миди 2 полоска</h3>
+                        <div class="product__price-wrapper">
+                          <p class="product__current-price">4 400р.</p>
+                        </div>
+                        <span class="product__marker">новинка</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product__item swiper-slide">
+                    <a class="product__link" href="#">
+                      <button
+                        class="product__added-favorites"
+                        type="button
+                      "
+                      >
+                        <svg class="product__favourites-icon" role="img" width="24" height="19">
+                          <use xlink:href="img/sprite.svg#favourites"></use>
+                        </svg>
+                      </button>
+
+                      <picture>
+                        <source />
+                        <img class="product__image" src="img/catalog/image-3.png" width="415" height="585" alt="Платье-рубашка виск атлас" />
+                      </picture>
+                      <div class="product__footer">
+                        <form class="product__form">
+                          <fieldset class="product__sizes-wrapper">
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xxs" disabled />
+                              <span class="product__title-radio size-disabled">xxs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xs" />
+                              <span class="product__title-radio">xs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="s" />
+                              <span class="product__title-radio">s</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="m" />
+                              <span class="product__title-radio">m</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="l" />
+                              <span class="product__title-radio">l</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xl" disabled />
+                              <span class="product__box-radio"></span>
+                              <span class="product__title-radio size-disabled">xl</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xxl" />
+                              <span class="product__title-radio">xxl</span>
+                            </label>
+                          </fieldset>
+                          <button class="product__button-added" type="button">
+                            <span class="product__button-text" aria-label="добавить в корзину">в корзину</span>
+                            <svg class="promo-content__preview-icon" role="img" width="22" height="22">
+                              <use xlink:href="img/sprite.svg#icon-basket"></use>
+                            </svg>
+                          </button>
+                        </form>
+                        <h3 class="product__title">Платье-рубашка виск атлас</h3>
+                        <div class="product__price-wrapper">
+                          <p class="product__current-price">12 700р.</p>
+                        </div>
+                        <span class="product__marker">новинка</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product__item swiper-slide">
+                    <a class="product__link" href="#">
+                      <button
+                        class="product__added-favorites"
+                        type="button
+                      "
+                      >
+                        <svg class="product__favourites-icon" role="img" width="24" height="19">
+                          <use xlink:href="img/sprite.svg#favourites"></use>
+                        </svg>
+                      </button>
+
+                      <picture>
+                        <source />
+                        <img class="product__image" src="img/catalog/image-4.png" width="415" height="585" alt="Платье-рубашка с карманами миди" />
+                      </picture>
+                      <div class="product__footer">
+                        <form class="product__form">
+                          <fieldset class="product__sizes-wrapper">
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xxs" disabled />
+                              <span class="product__title-radio size-disabled">xxs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xs" />
+                              <span class="product__title-radio">xs</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="s" />
+                              <span class="product__title-radio">s</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="m" />
+                              <span class="product__title-radio">m</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="l" />
+                              <span class="product__title-radio">l</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xl" disabled />
+                              <span class="product__box-radio"></span>
+                              <span class="product__title-radio size-disabled">xl</span>
+                            </label>
+                            <label class="product__custom-radio">
+                              <input class="product__radio" type="radio" name="size" value="xxl" />
+                              <span class="product__title-radio">xxl</span>
+                            </label>
+                          </fieldset>
+                          <button class="product__button-added" type="button">
+                            <span class="product__button-text" aria-label="добавить в корзину">в корзину</span>
+                            <svg class="product__icon-button" role="img" width="22" height="22">
+                              <use xlink:href="img/sprite.svg#icon-basket"></use>
+                            </svg>
+                          </button>
+                        </form>
+                        <h3 class="product__title">Платье-рубашка с карманами миди</h3>
+                        <div class="product__price-wrapper">
+                          <span class="product__nosale-price">12 900р.</span>
+                          <p class="product__current-price">8 900р.</p>
+                        </div>
+                        <span class="product__marker">новинка</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container"></div>
+      </footer>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
