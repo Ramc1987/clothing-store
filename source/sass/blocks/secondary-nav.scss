@@ -3,24 +3,88 @@
   display: flex;
   justify-content: center;
   padding-top: 30px;
-  min-height: 531px;
+  min-height: 399px;
   max-width: 1920px;
   margin: 0 auto;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     background-image: url("../../img/decor.svg");
     background-repeat: no-repeat;
     width: 100%;
     height: 108px;
   }
+
+  @include vp-1439 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @include vp-1023 {
+    min-height: 300px;
+  }
+
+  @include vp-1023 {
+    &::before {
+      height: 57px;
+    }
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 15px;
+
+    &::before {
+      display: none;
+    }
+
+    margin-bottom: 30px;
+  }
+
+  @include vp-476 {
+    gap: 10px 10px;
+    margin-bottom: 30px;
+  }
+}
+
+.secondary-nav__item {
+  @include vp-767 {
+    min-height: 278px;
+  }
 }
 
 .secondary-nav__item-image {
   min-height: 448px;
+  width: 100%;
+  object-fit: cover;
+
+  @include vp-1439 {
+    height: 32vw;
+    width: 100%;
+    object-fit: cover;
+    min-height: 340px;
+  }
+
+  @include vp-1023 {
+    width: 100%;
+    min-height: 197px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 94%;
+    min-height: 250px;
+  }
+
+  @include vp-476 {
+    grid-template-columns: 1fr;
+
+    height: 85%;
+    object-fit: cover;
+  }
 }
 
 .secondary-nav__link {
@@ -31,7 +95,18 @@
   margin-bottom: 11px;
   margin-left: 25px;
 
+  @include vp-1023 {
+    @include font(12px, 17px, 300, $first-color);
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-bottom: 8px;
+  }
+
   @include hover {
     opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 1px solid #000000;
   }
 }

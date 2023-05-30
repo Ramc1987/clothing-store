@@ -1,4 +1,4 @@
-const togglePages = document.querySelectorAll('.header__control-text');
+const togglePages = document.querySelectorAll('.header__control-button');
 const indicatorToggle = document.querySelector('.header__indicator');
 
 function toogleIndicator() {

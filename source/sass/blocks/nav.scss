@@ -11,12 +11,37 @@
   display: flex;
   justify-content: space-between;
   max-width: 650px;
-  width: 54.63%;
+  width: 63.63%;
+
+  @include vp-1023 {
+    width: 70%;
+  }
+
+  @include vp-767 {
+    left: -1000px;
+  }
+}
+
+.nav__primary-item {
+  @include vp-767 {
+    padding: 5px 0;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .nav__primary-link {
+  @include font(14px, 17px, 300);
   text-transform: uppercase;
   outline: none;
+
+  @include vp-1023 {
+    @include font(12px, 17px, 300);
+
+    max-width: 700px;
+    width: 100%;
+  }
 
   @include hover {
     opacity: 0.6;
@@ -36,16 +61,36 @@
   align-items: center;
   max-width: 235px;
   width: 19.75%;
+
+  @include vp-767 {
+    margin-left: auto;
+    width: 32.75%;
+  }
 }
 
 .nav__user-item {
   display: flex;
   align-items: center;
+  outline: none;
 }
 
 .nav__user-link {
   position: relative;
   display: block;
+
+  &:focus-visible {
+    outline: 1px solid rgb(0, 0, 0);
+  }
+}
+
+.nav__user-icon {
+  &:hover {
+    fill: #585858;
+  }
+  @include vp-1023 {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .nav__basket-counter {

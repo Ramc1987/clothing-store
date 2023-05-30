@@ -3,6 +3,7 @@ import { toogleIndicator } from './modules/toggle-indicator';
 import { initSwiperArticles } from './modules/catalog-swiper';
 import { counterProduct } from './modules/counter-basket';
 import { counterFavorites } from './modules/favourites-counter';
+import { activateMobMenu } from './modules/mobile.menu';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   toogleIndicator();
   counterProduct();
   counterFavorites();
+  activateMobMenu();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

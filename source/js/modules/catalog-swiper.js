@@ -3,8 +3,8 @@ const initSwiperArticles = (swiper) => {
     // eslint-disable-next-line
     new Swiper('#catalogSwiper', {
       navigation: {
-        nextEl: '.catalog__button--prev',
-        prevEl: '.catalog__button--next',
+        nextEl: '.catalog__button--next',
+        prevEl: '.catalog__button--prev',
       },
 
       mousewheel: true,
@@ -30,11 +30,11 @@ const initSwiperArticles = (swiper) => {
         768: {
           slidesPerView: 3,
           slidesPerGroup: 2,
-          spaceBetween: 30,
+          spaceBetween: 20,
           initialSlide: 2,
         },
         1300: {
-          slidesPerView: 3,
+          slidesPerView: 4,
           slidesPerGroup: 1,
           spaceBetween: 18,
           initialSlide: 0,

@@ -12,13 +12,25 @@
   top: 24px;
   cursor: pointer;
   border: none;
+
+  @include vp-1023 {
+    right: 10px;
+    top: 15px;
+  }
 }
 
 .product__favourites-icon {
   fill: none;
   stroke: #000000;
+  display: block;
+
   &--favor {
     fill: #0077d4;
+  }
+
+  @include vp-1023 {
+    width: 17px;
+    height: 17px;
   }
 }
 
@@ -39,11 +51,15 @@
   width: 100%;
   min-height: 80px;
   position: absolute;
-  bottom: 34px;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $second-color;
   z-index: -1;
+
+  @include vp-767 {
+    bottom: 0;
+  }
 }
 
 .product__sizes-wrapper {
@@ -99,18 +115,35 @@
 .product__footer {
   padding-top: 13px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1023 {
+    padding-top: 7px;
+  }
 }
 
 .product__title {
   @include font(14px, 17px, 300, $first-color);
   text-transform: uppercase;
+  width: 75%;
+  max-width: 350px;
 
   margin: 0;
+
+  @include vp-1023 {
+    @include font(12px, 17px, 300, $first-color);
+  }
+}
+
+.product__price-wrapper {
+  display: flex;
 }
 
 .product__current-price {
   display: inline-block;
   vertical-align: middle;
+  margin: 0;
 }
 
 .product__nosale-price {
@@ -127,4 +160,8 @@
   position: absolute;
   top: 0;
   right: 0;
+
+  @include vp-1023 {
+    @include font(10px, 14px, 400, $first-color);
+  }
 }

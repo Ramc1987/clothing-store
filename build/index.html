@@ -4,82 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта" />
+    <meta name="description" content="магазин одежды" />
+    <link rel="preload" href="fonts/montserrat-light.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
     <title>clothing-store</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__container container">
-          <nav class="header__nav nav">
-            <ul class="nav__primary-list reset-list">
-              <li class="nav__primary-item">
-                <a class="nav__primary-link" href="#">женщинам</a>
-              </li>
-              <li class="nav__primary-item">
-                <a class="nav__primary-link" href="#">мужчинам</a>
-              </li>
-              <li class="nav__primary-item">
-                <a class="nav__primary-link" href="#">аксессуары</a>
-              </li>
-              <li class="nav__primary-item">
-                <a class="nav__primary-link" href="#">новинки</a>
-              </li>
-              <li class="nav__primary-item">
-                <a class="nav__primary-link" href="#">коллекции</a>
-              </li>
-            </ul>
-            <ul class="nav__user-list reset-list">
-              <li class="nav__user-item">
-                <a class="nav__user-link" href="#">
-                  <svg class="nav__user-icon" role="img" width="21" height="20">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="nav__user-item">
-                <a class="nav__user-link" href="#">
-                  <svg class="nav__user-icon" role="img" width="21" height="20">
-                    <use xlink:href="img/sprite.svg#icon-user"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="nav__user-item">
-                <a class="nav__user-link" href="#">
-                  <svg class="nav__user-icon" role="img" width="21" height="19">
-                    <use xlink:href="img/sprite.svg#icon-favourites"></use>
-                  </svg>
-                  <span class="nav__favourites-counter counter"></span>
-                </a>
-              </li>
-              <li class="nav__user-item">
-                <a class="nav__user-link" href="#">
-                  <svg class="nav__user-icon" role="img" width="22" height="22">
-                    <use xlink:href="img/sprite.svg#icon-basket"></use>
-                  </svg>
-                  <span class="nav__basket-counter counter"></span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__promo-content promo-content">
-            <p class="promo-content__subtitle">Новая коллекция 2022</p>
-            <h2 class="promo-content__title">платья с принтами</h2>
-            <a class="promo-content__preview">
-              смотреть
-              <svg class="promo-content__preview-icon" role="img" width="9" height="6">
-                <use xlink:href="img/sprite.svg#icon-arrow"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="header__control-pages">
-            <div class="header__control-description">
-              <p class="header__control-text">предыдущий</p>
-              <p class="header__control-text">следующий</p>
+        <div class="header__overlay">
+          <div class="header__container container">
+            <nav class="header__nav nav" aria-label="Основная">
+              <div class="header__mobil-menu mobile-menu">
+                <ul class="nav__primary-list reset-list">
+                  <li class="nav__primary-item">
+                    <a class="nav__primary-link" href="#">женщинам</a>
+                  </li>
+                  <li class="nav__primary-item">
+                    <a class="nav__primary-link" href="#">мужчинам</a>
+                  </li>
+                  <li class="nav__primary-item">
+                    <a class="nav__primary-link" href="#">аксессуары</a>
+                  </li>
+                  <li class="nav__primary-item">
+                    <a class="nav__primary-link" href="#">новинки</a>
+                  </li>
+                  <li class="nav__primary-item">
+                    <a class="nav__primary-link" href="#">коллекции</a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="nav__user-list reset-list">
+                <li class="nav__user-item">
+                  <a class="nav__user-link" href="#">
+                    <svg class="nav__user-icon" role="img" width="21" height="20">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__user-item">
+                  <a class="nav__user-link" href="#">
+                    <svg class="nav__user-icon" role="img" width="21" height="20">
+                      <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__user-item">
+                  <a class="nav__user-link" href="#">
+                    <svg class="nav__user-icon" role="img" width="21" height="19">
+                      <use xlink:href="img/sprite.svg#icon-favourites"></use>
+                    </svg>
+                    <span class="nav__favourites-counter counter"></span>
+                  </a>
+                </li>
+                <li class="nav__user-item">
+                  <a class="nav__user-link" href="#">
+                    <svg class="nav__user-icon" role="img" width="22" height="22">
+                      <use xlink:href="img/sprite.svg#icon-basket"></use>
+                    </svg>
+                    <span class="nav__basket-counter counter"></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__menu-toggle menu-toggle" type="button">
+              <span class="menu-toggle__line"></span>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="header__promo-content promo-content">
+              <p class="promo-content__subtitle">Новая коллекция 2022</p>
+              <h2 class="promo-content__title">платья с принтами</h2>
+              <a class="promo-content__preview" href="#">
+                смотреть
+                <svg class="promo-content__preview-icon" role="img" width="9" height="6">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
             </div>
-            <div class="header__control-indicator">
-              <span class="header__indicator"></span>
+            <div class="header__control-pages">
+              <div class="header__control-description">
+                <button class="header__control-button" type="button">предыдущий</button>
+                <button class="header__control-button" type="button">следующий</button>
+              </div>
+              <div class="header__control-indicator">
+                <span class="header__indicator"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -135,8 +145,26 @@
         <section class="catalog">
           <div class="catalog__container container">
             <h2 class="catalog-title">откроЙте для себя новинки сезона</h2>
+            <a class="catalog__swiper-foul" href="#"
+              >Перейти в каталог
+              <svg class="catalog__foul-icon" role="img" width="9" height="9">
+                <use xlink:href="img/sprite.svg#arrow-next"></use>
+              </svg>
+            </a>
             <div class="catalog__swiper-wrapper">
               <div class="swiper product" id="catalogSwiper">
+                <div class="swiper__control-button">
+                  <button class="catalog__button catalog__button--prev" aria-label="назад" type="button">
+                    <svg class="nav__user-icon" role="img" width="21" height="20">
+                      <use xlink:href="img/sprite.svg#arrow-prev"></use>
+                    </svg>
+                  </button>
+                  <button class="catalog__button catalog__button--next" aria-label="вперед" type="button">
+                    <svg class="nav__user-icon" role="img" width="21" height="20">
+                      <use xlink:href="img/sprite.svg#arrow-next"></use>
+                    </svg>
+                  </button>
+                </div>
                 <ul class="product__produts-list swiper-wrapper reset-list">
                   <li class="product__item swiper-slide">
                     <a class="product__link" href="#">
@@ -195,7 +223,9 @@
                           </button>
                         </form>
                         <h3 class="product__title">Платье-рубашка виск атлас</h3>
-                        <p class="product__current-price">12 700р.</p>
+                        <div class="product__price-wrapper">
+                          <p class="product__current-price">12 700р.</p>
+                        </div>
                         <span class="product__marker">новинка</span>
                       </div>
                     </a>
@@ -256,7 +286,9 @@
                           </button>
                         </form>
                         <h3 class="product__title">Юбка миди 2 полоска</h3>
-                        <p class="product__current-price">4 400р.</p>
+                        <div class="product__price-wrapper">
+                          <p class="product__current-price">4 400р.</p>
+                        </div>
                         <span class="product__marker">новинка</span>
                       </div>
                     </a>
@@ -318,7 +350,9 @@
                           </button>
                         </form>
                         <h3 class="product__title">Платье-рубашка виск атлас</h3>
-                        <p class="product__current-price">12 700р.</p>
+                        <div class="product__price-wrapper">
+                          <p class="product__current-price">12 700р.</p>
+                        </div>
                         <span class="product__marker">новинка</span>
                       </div>
                     </a>
@@ -380,16 +414,16 @@
                           </button>
                         </form>
                         <h3 class="product__title">Платье-рубашка с карманами миди</h3>
-                        <span class="product__nosale-price">12 900р.</span>
-                        <p class="product__current-price">8 900р.</p>
+                        <div class="product__price-wrapper">
+                          <span class="product__nosale-price">12 900р.</span>
+                          <p class="product__current-price">8 900р.</p>
+                        </div>
                         <span class="product__marker">новинка</span>
                       </div>
                     </a>
                   </li>
                 </ul>
               </div>
-              <button class="catalog__button catalog__button--prev" aria-label="назад" type="button"></button>
-              <button class="catalog__button catalog__button--next" aria-label="вперед" type="button"></button>
             </div>
           </div>
         </section>
